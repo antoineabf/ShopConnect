@@ -1,0 +1,149 @@
+/* Home.css */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20vh;
+  }
+  
+  .empty-product {
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0a0e25bd;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* SearchBar */
+  form {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"] {
+    width: 60%;
+    max-width: 400px;
+    border-radius: 2vw;
+  }
+  
+  button[type="submit"] {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  input[type="text"]:hover,
+  button[type="submit"]:hover {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #b2cddaa9;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Welcome Message */
+  .welcome-message {
+    color: #e6f1fc;
+    font-size: 22px;
+    font-family:sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Upper Section */
+  .upper-section {
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .upper-section-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .create-product-button {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    animation: rainbow-spin 5s linear infinite;
+  }
+  
+  .create-product-button:hover {
+    box-shadow: 0 0 15px #0056b3;
+    transform: translateY(-10px);
+  }
+  
+  @keyframes rainbow-spin {
+    0% {
+      background: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+      background-size: 1800% 1800%;
+      animation-timing-function: linear;
+      background-position: 0% 50%;
+    }
+    50% {
+      background: linear-gradient(90deg, #dd00f3, #2b1de8, #1ddde8, #1de840, #e3e81d, #e8b71d, #e81d1d, #ff2400, #ff2400);
+      background-size: 1800% 1800%;
+      animation-timing-function: linear;
+      background-position: 100% 50%;
+    }
+    100% {
+      background: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+      background-size: 1800% 1800%;
+      animation-timing-function: linear;
+      background-position: 0% 50%;
+    }
+  }
